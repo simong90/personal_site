@@ -10,17 +10,25 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <header id="main_navigation" class="clearfix">
+      <%= link_to "Simon Greenwood", root_path, class: "name" %>
+      <nav>
+        <%= link_to "Articles", posts_path %>
+        <a href="">Projects</a>
+        <a href="">Contact</a>
+      </nav>
+      </header>
 
-<header id="main_navigation" class="clearfix">
-    <a href="#" class="name">Simon Greenwood</a>
+    <%= yield %>
+
+<footer id="main_footer">
+    <p class="copyright">&copy; 2016 Simon
+    Greenwood </p>
     <nav>
-      <%= link_to "Articles", posts_path %>
-      <a href="">Projects</a>
-      <a href="">Contact</a>
+        <a href="http://twitter.com/s1mongr33nwood" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a href="http://github.com/simong90" target="_blank"><i class="fa fa-github"></i></a>
     </nav>
-    </header>
-
-<%= yield %>
+  </footer>
 
 </body>
 </html>
