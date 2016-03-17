@@ -38,11 +38,11 @@ end
 
   private
 
-  def post_params
+def post_params
     params.require(:post).permit(:title, :content, :slug)
   end
 
   def find_post
-     @post =Post.friendly.find(params[:id])
+    @post = Post.friendly.find(params[:id])
   end
 end
