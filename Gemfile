@@ -22,6 +22,8 @@ gem 'jbuilder', '~> 2.0'
 
 gem 'friendly_id', '~> 5.1'
 
+gem 'will_paginate', '~> 3.1'
+
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
